@@ -21,7 +21,7 @@ function postData() {
     };
   });
 
-  return `export const posts = ${JSON.stringify(posts)}`;
+  return `export const posts = ${posts}`;
 }
 
 try {
