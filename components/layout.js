@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
+import Search from "./Search";
 
 const Layout = (props) => {
   return (
@@ -10,6 +11,7 @@ const Layout = (props) => {
         <meta name="description" content={props.description} />
       </Head>
       <Header />
+      <Search />
       <main
         className="container mx-auto md:lg py-7"
         style={{ width: "1200px" }}

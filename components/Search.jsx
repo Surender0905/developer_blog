@@ -12,13 +12,17 @@ export default function Search() {
         setSearchResults([]);
       } else {
         const res = await fetch(`/api/search?q=${searchTerm}`);
+
         const { results } = await res.json();
+
         setSearchResults(results);
       }
     };
 
     getResults();
   }, [searchTerm]);
+
+  console.log(searchTerm, searchResults);
 
   return (
     <div className="relative bg-gray-600 p-4">
